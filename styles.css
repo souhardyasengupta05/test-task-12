@@ -1,0 +1,18 @@
+:root { --bg: #0b1020; --card: #141a2b; --text: #e7e7f0; --muted: #a9b0c9; --accent: #6ea8fe; }
+* {box-sizing: border-box}
+html, body { margin:0; padding:0; height:100%; background: #0b1020; color: #e7e7f0; font-family: Inter, system-ui, Arial, sans-serif;}
+.container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+.site-header { text-align: center; margin-bottom: 1.5rem; }
+.card { background: rgba(20,26,43,.95); border:1px solid rgba(255,255,255,.08); border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1rem; }
+.card h2 { margin: 0 0 0.5rem; font-size: 1.25rem; letter-spacing: .5px; }
+ul { margin: 0; padding-left: 1.2em; }
+li { margin: .25rem 0; }
+.codeblock { background: #111; color: #d6e7ff; padding: .75rem; border-radius: 6px; overflow:auto; white-space: pre; }
+
+@media (min-width: 700px) {
+  #app { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .card { min-height: 180px; }
+}
+@media (max-width: 699px) {
+  .container { padding: 1rem; }
+}
